@@ -2,9 +2,9 @@ name: Python package
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "ci" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "ci" ]
 
 jobs:
   build:
@@ -21,7 +21,7 @@ jobs:
           
           architecture: 'x64'
       
-      - name: Display python version
+      - name: Python version
         run: python -c "import sys; print(sys.version)"
         
         
