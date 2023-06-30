@@ -21,7 +21,7 @@ jobs:
           
           architecture: 'x64'
       
-      - name: Python version
+      - name: viwe python version
         run: python -c "import sys; print(sys.version)"
         
         
